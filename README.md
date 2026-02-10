@@ -6,7 +6,7 @@
 <ul>
 <li> List nondimensional quantities (writeup)
 <li> 20x20 grid (complete)
-<li> 40x40 grid
+<li> 40x40 grid (complete)
 <li> 80x80 grid (complete)
 <li> 160x160 grid
 <li> u and v plots for all 4 grids
