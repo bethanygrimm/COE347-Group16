@@ -1,0 +1,39 @@
+/*---------------------------------------------------------------------------*\
+  =========                 |
+  \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox
+   \\    /   O peration     | Website:  https://openfoam.org
+    \\  /    A nd           | Version:  7
+     \\/     M anipulation  |
+\*---------------------------------------------------------------------------*/
+Build  : 7
+Exec   : postProcess -func sample -latestTime
+Date   : Feb 11 2026
+Time   : 15:23:24
+Host   : "c209-015.frontera.tacc.utexas.edu"
+PID    : 243081
+I/O    : uncollated
+Case   : /work2/11329/kdn849/frontera/COE-347-SP26/cavity160.100.AR0.5
+nProcs : 1
+sigFpe : Enabling floating point exception trapping (FOAM_SIGFPE).
+fileModificationChecking : Monitoring run-time modified files using timeStampMaster (fileModificationSkew 10)
+allowSystemOperations : Allowing user-supplied system call operations
+
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+Create time
+
+Create mesh for time = 0.5
+
+Reading set description:
+    lid
+    below_lid
+
+Time = 0.5
+
+Reading fields:
+    volScalarFields: p
+    volVectorFields: U
+
+Executing functionObjects
+
+End
+

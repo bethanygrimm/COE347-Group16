@@ -1,0 +1,89 @@
+/*---------------------------------------------------------------------------*\
+  =========                 |
+  \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox
+   \\    /   O peration     | Website:  https://openfoam.org
+    \\  /    A nd           | Version:  7
+     \\/     M anipulation  |
+\*---------------------------------------------------------------------------*/
+Build  : 7
+Exec   : blockMesh
+Date   : Feb 11 2026
+Time   : 16:20:44
+Host   : "c201-027.frontera.tacc.utexas.edu"
+PID    : 257774
+I/O    : uncollated
+Case   : /work2/11329/kdn849/frontera/COE-347-SP26/cavity160.100.AR2
+nProcs : 1
+sigFpe : Enabling floating point exception trapping (FOAM_SIGFPE).
+fileModificationChecking : Monitoring run-time modified files using timeStampMaster (fileModificationSkew 10)
+allowSystemOperations : Allowing user-supplied system call operations
+
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+Create time
+
+Creating block mesh from
+    "/work2/11329/kdn849/frontera/COE-347-SP26/cavity160.100.AR2/system/blockMeshDict"
+Using #calcEntry at line 22 in file "/work2/11329/kdn849/frontera/COE-347-SP26/cavity160.100.AR2/system/blockMeshDict"
+Using #codeStream with "/work2/11329/kdn849/frontera/COE-347-SP26/cavity160.100.AR2/dynamicCode/platforms/linux64IccDPInt32Opt/lib/libcodeStream_44f5e605df9ad230b5ffbed66ad890126960126a.so"
+Creating new library in "dynamicCode/_44f5e605df9ad230b5ffbed66ad890126960126a/platforms/linux64IccDPInt32Opt/lib/libcodeStream_44f5e605df9ad230b5ffbed66ad890126960126a.so"
+Invoking "wmake -s libso /work2/11329/kdn849/frontera/COE-347-SP26/cavity160.100.AR2/dynamicCode/_44f5e605df9ad230b5ffbed66ad890126960126a"
+wmake libso /work2/11329/kdn849/frontera/COE-347-SP26/cavity160.100.AR2/dynamicCode/_44f5e605df9ad230b5ffbed66ad890126960126a
+    ln: ./lnInclude
+    wmkdep: codeStreamTemplate.C
+    Ctoo: codeStreamTemplate.C
+    ld: /work2/11329/kdn849/frontera/COE-347-SP26/cavity160.100.AR2/dynamicCode/_44f5e605df9ad230b5ffbed66ad890126960126a/../platforms/linux64IccDPInt32Opt/lib/libcodeStream_44f5e605df9ad230b5ffbed66ad890126960126a.so
+Using #calcEntry at line 25 in file "/work2/11329/kdn849/frontera/COE-347-SP26/cavity160.100.AR2/system/blockMeshDict"
+Using #codeStream with "/work2/11329/kdn849/frontera/COE-347-SP26/cavity160.100.AR2/dynamicCode/platforms/linux64IccDPInt32Opt/lib/libcodeStream_3d53e3016699eb90a923125f4494ced9731d7356.so"
+Creating new library in "dynamicCode/_3d53e3016699eb90a923125f4494ced9731d7356/platforms/linux64IccDPInt32Opt/lib/libcodeStream_3d53e3016699eb90a923125f4494ced9731d7356.so"
+Invoking "wmake -s libso /work2/11329/kdn849/frontera/COE-347-SP26/cavity160.100.AR2/dynamicCode/_3d53e3016699eb90a923125f4494ced9731d7356"
+wmake libso /work2/11329/kdn849/frontera/COE-347-SP26/cavity160.100.AR2/dynamicCode/_3d53e3016699eb90a923125f4494ced9731d7356
+    ln: ./lnInclude
+    wmkdep: codeStreamTemplate.C
+    Ctoo: codeStreamTemplate.C
+    ld: /work2/11329/kdn849/frontera/COE-347-SP26/cavity160.100.AR2/dynamicCode/_3d53e3016699eb90a923125f4494ced9731d7356/../platforms/linux64IccDPInt32Opt/lib/libcodeStream_3d53e3016699eb90a923125f4494ced9731d7356.so
+Creating block edges
+No non-planar block faces defined
+Creating topology blocks
+Creating topology patches
+
+Creating block mesh topology
+
+Check topology
+
+	Basic statistics
+		Number of internal faces : 0
+		Number of boundary faces : 6
+		Number of defined boundary faces : 6
+		Number of undefined boundary faces : 0
+	Checking patch -> block consistency
+
+Creating block offsets
+Creating merge list .
+
+Creating polyMesh from blockMesh
+Creating points with scale 0.1
+    Block 0 cell size :
+        i : 0.000625 .. 0.000625
+        j : 0.000625 .. 0.000625
+        k : 0.01
+Creating cells
+Creating patches
+
+Writing polyMesh
+----------------
+Mesh Information
+----------------
+  boundingBox: (0 0 0) (0.1 0.2 0.01)
+  nPoints: 103362
+  nCells: 51200
+  nFaces: 205280
+  nInternalFaces: 101920
+----------------
+Patches
+----------------
+  patch 0 (start: 101920 size: 160) name: movingWall
+  patch 1 (start: 102080 size: 800) name: fixedWalls
+  patch 2 (start: 102880 size: 102400) name: frontAndBack
+
+End
+
