@@ -32,7 +32,7 @@ def defineVertices(d, r, h, lf, lb, w):
     vertices.append((lb, h, 0))
     vertices.append((lb, 1/2*math.sqrt(2)*r, 0))
     vertices.append((lb, 0, 0))
-    vertices.append((lb, -1.2*math.sqrt(2)*r, 0))
+    vertices.append((lb, -1/2*math.sqrt(2)*r, 0))
     vertices.append((lb, -1*h, 0))
     vertices.append((1/2*math.sqrt(2)*r, -1*h, 0))
     vertices.append((0, -1*h, 0))
@@ -40,7 +40,7 @@ def defineVertices(d, r, h, lf, lb, w):
     vertices.append((-1*lf, -1*h, 0))
     vertices.append((-1*lf, -1/2*math.sqrt(2)*r, 0))
     vertices.append((-1*lf, 0, 0))
-    vertices.append((-1*lf, 1.2*math.sqrt(2)*r, 0))
+    vertices.append((-1*lf, 1/2*math.sqrt(2)*r, 0))
     vc = []
     vc.append((-1/2*math.sqrt(2)*r, 1/2*math.sqrt(2)*r, 0))
     vc.append((0, r, 0))
@@ -236,7 +236,7 @@ boundaries = (defineBoundaries())
 
 #now for formatting
 with open("./blockMeshDict", "w") as text_file:
-    text_file.write("FoamFile\n{\n\tversion\t2.0;\n\tformat\tascii;\n\tclass\tdictionary;\n\tobject\tblockMesDict;\n}\n\nconvertToMeters " + str(scaling) + ";\n\n")
+    text_file.write("FoamFile\n{\n\tversion\t2.0;\n\tformat\tascii;\n\tclass\tdictionary;\n\tobject\tblockMeshDict;\n}\n\nconvertToMeters " + str(scaling) + ";\n\n")
     text_file.write("vertices\n(\n")
     for i in range(len(vertices)):
         k = vertices[i]
