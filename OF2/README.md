@@ -1,0 +1,1 @@
+To run the meshing script, move defineBlockMeshDict.py into the system folder and run <code>python3 defineBlockMeshDict.py</code>, and blockMeshDict should automatically show up in the system folder. Lines 4-22 can be varied if we want to change mesh dimensions, grading, and resolution. I will add a schematic in a bit (lmk if there are any errors)
