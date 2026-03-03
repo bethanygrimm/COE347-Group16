@@ -34,8 +34,8 @@ Writeup (Andrew, Bethany)
 
 Attach all files and team report
 
-**also change the segment starting with "#SBATCH -p development" in openfoam.v7.parallel.slurm to the following (this is so you don't lose your progress)**\\
-<code>#SBATCH -p small          # Queue (partition) name</code>\\
-<code>#SBATCH -N 1               # Total # of nodes</code>\\
-<code>#SBATCH -n 2               # Total # of mpi tasks</code>\\
-<code>#SBATCH -t 05:00:00        # Run time (hh:mm:ss)</code>\\
+**also change the segment starting with "#SBATCH -p development" in openfoam.v7.parallel.slurm to the following (this is so you don't lose your progress)**\br
+<code>#SBATCH -p small          # Queue (partition) name</code>\br
+<code>#SBATCH -N 1               # Total # of nodes</code>\br
+<code>#SBATCH -n 2               # Total # of mpi tasks</code>\br
+<code>#SBATCH -t 05:00:00        # Run time (hh:mm:ss)</code>\br
