@@ -14,8 +14,8 @@ Re=110 (Bethany)
 Part 7:<br>
 Re=20 (Andrew)
 - Just free-response<br>
-Re=110 (Bethany)
-- Just free-response<br>
+~~Re=110 (Bethany)~~
+- ~~Just free-response~~<br>
 
 Part 8: (Precious, Bethany)
 - Five meshes (original, refinement 1, refinement 2, ref 2 with smaller timestep, ref 2 with even smaller timestep) (we can split these up, these take forever) (I (Bethany) can do the Paraview stuff as long as it's all on git yay)
