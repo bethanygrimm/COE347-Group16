@@ -1,0 +1,35 @@
+In system/defineBlockMeshDict.py:
+#define variables
+scaling = 1.0 #meters
+d = 1.0 #diameter of cylinder
+r = 1.0 #radius of outer circle
+h = 3.5 #domain height
+lf = 3.5 #domain length in front of cylinder
+lb = 10.5 #domain length behind cylinder
+w = 0.1 #width in z-direction
+wCells = 1 #keep this at 1
+wGrading = 1 #keep this at 1
+circCells = 40 #cells along the circumference of the circle, each block being 1/8 of the full circle
+circGrading = 1 #grading across the circumference of the circle, ideally keep this as 1 for symmetry
+radialCells = 40 #number of cells radially outward
+radialGrading = 1 #grading of cells radially outward
+lfCells = 40 #number of cells in region in front of cylinder
+lfGrading = 1 #grading of cells in region in front of cylinder
+lbCells = 140 #number of cells in region behind cylinder
+lbGrading = 1 #grading of cells in region behind cylinder
+hCells = 40 #number of cells in regions above and below cylinder
+hGrading = 1 #grading of cells in regions above and below cylinder
+
+In system/controlDict:
+endTime         100.0;
+deltaT          0.0008;
+writeInterval   0.5;
+
+In constant/transportProperties:
+nu              nu [ 0 2 -1 0 0 0 0 ] 0.009090909;
+
+In openfoam.v7.parallel.slurm:
+#SBATCH -p small          # Queue (partition) name
+#SBATCH -N 1               # Total # of nodes
+#SBATCH -n 2               # Total # of mpi tasks
+#SBATCH -t 08:00:00        # Run time (hh:mm:ss)
