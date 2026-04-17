@@ -1,0 +1,6 @@
+/work2/10188/bethanygrimm/frontera/COE347-SP26/OF3/m3wt-8p
+Thu Apr  2 03:11:20 CDT 2026
+Running decomposePar on /work2/10188/bethanygrimm/frontera/COE347-SP26/OF3/m3wt-8p
+Running rhoCentralFoam in parallel on /work2/10188/bethanygrimm/frontera/COE347-SP26/OF3/m3wt-8p using 8 processes
+Running reconstructPar on /work2/10188/bethanygrimm/frontera/COE347-SP26/OF3/m3wt-8p
+Thu Apr  2 05:56:30 CDT 2026
