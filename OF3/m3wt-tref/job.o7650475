@@ -1,0 +1,8 @@
+/work2/10188/bethanygrimm/frontera/COE347-SP26/OF3/m3wt-tref
+Sat Apr 11 23:43:18 CDT 2026
+Running blockMesh on /work2/10188/bethanygrimm/frontera/COE347-SP26/OF3/m3wt-tref
+Running checkMesh on /work2/10188/bethanygrimm/frontera/COE347-SP26/OF3/m3wt-tref
+Running decomposePar on /work2/10188/bethanygrimm/frontera/COE347-SP26/OF3/m3wt-tref
+Running rhoCentralFoam in parallel on /work2/10188/bethanygrimm/frontera/COE347-SP26/OF3/m3wt-tref using 4 processes
+Running reconstructPar on /work2/10188/bethanygrimm/frontera/COE347-SP26/OF3/m3wt-tref
+Sat Apr 11 23:49:14 CDT 2026
