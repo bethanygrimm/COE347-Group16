@@ -1,0 +1,5 @@
+/work2/10188/bethanygrimm/frontera/COE347-SP26/OF3/mach-3-wind-tunnel-with-step-Nx8
+Sun Mar 29 15:58:34 CDT 2026
+Running blockMesh on /work2/10188/bethanygrimm/frontera/COE347-SP26/OF3/mach-3-wind-tunnel-with-step-Nx8
+Running checkMesh on /work2/10188/bethanygrimm/frontera/COE347-SP26/OF3/mach-3-wind-tunnel-with-step-Nx8
+Running rhoCentralFoam on /work2/10188/bethanygrimm/frontera/COE347-SP26/OF3/mach-3-wind-tunnel-with-step-Nx8
