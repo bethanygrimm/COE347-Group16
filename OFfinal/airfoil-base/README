@@ -1,0 +1,14 @@
+Hi! Here's the (hopefully) working base case for the airfoil :D
+
+**Changes to make before running this**
+
+To vary angle of attack, navigate to 0/U and change everywhere it says "uniform (1.95630 0.41582 0)"
+These are the parameters for the +12 degree angle of attack (2cos(12) in x, 2sin(12) in y, 0 in z), for 0 degrees you can set it to "uniform (2 0 0)" and for -12 degrees you can set it to "uniform (1.95630 -0.41582 0)"
+
+Changing the mesh size/resolution can be done in system/defBlockmeshDict.py! Like with the last one run "python3 defBlockMeshDict.py" to automatically create blockMeshDict :D
+ALSO something I found is that it fails checkMesh if "bfCells" and "bbCells" are too large :( so it's a good idea to run blockMesh and checkMesh first to check!! the solver has a problem if the cells are too "skew" so if this happens, try making "bfCells" and "bbCells" smaller idk
+I'll put in a schematic soon to make this easier!!
+
+Also when you make the mesh more refined, navigate to system/controlDict and make deltaT smaller, I found the solution reaches steady state at about 25 seconds, but if y'all come across better parameters, go for it!
+
+I have it set to 16 processors so running the parallel processer should make it go super fast :D
